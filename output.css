@@ -1,0 +1,35 @@
+html body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand';
+  outline: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: beige; }
+
+.chessboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 30rem;
+  max-height: 30rem;
+  width: 100vmin;
+  height: 100vmin;
+  background-color: #bef1fe;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 5vw; }
+  .chessboard-container .black {
+    background: #29b4c7; }
+
+.box {
+  height: 12.5%;
+  width: 12.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(1.5rem, 10vw, 2rem); }
+
+/*# sourceMappingURL=output.css.map */

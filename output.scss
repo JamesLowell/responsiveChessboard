@@ -1,0 +1,46 @@
+$containerViewport:100vmin;
+$boxRatio:12.5%;
+$primaryPosition:center;
+$maxMeasurement:30rem;
+$fontClamp:1.5rem, 10vw, 2rem;
+$primaryDisplay:flex;
+
+html{
+  body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand';
+    outline: transparent;
+    display: $primaryDisplay;
+    justify-content: $primaryPosition;
+    align-items: $primaryPosition;
+    background-color: beige;
+} 
+    }
+.chessboard-container {
+	display: $primaryDisplay;
+	flex-wrap: wrap;
+  max-width: $maxMeasurement;
+	max-height: $maxMeasurement;
+	width: $containerViewport;
+	height: $containerViewport;
+  background-color: #bef1fe;
+  cursor:pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:5vw;
+  .black {
+    background: #29b4c7;
+    
+  }
+}
+
+.box {
+    height: $boxRatio;
+    width: $boxRatio;
+    display: $primaryDisplay;
+    justify-content: $primaryPosition;
+    align-items: $primaryPosition;
+    font-size: clamp($fontClamp); 
+}
